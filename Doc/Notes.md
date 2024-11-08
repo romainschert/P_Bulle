@@ -17,3 +17,16 @@
     - Manger de la nourriture (des pommes) pour grandir
     - Eviter de se heurter aux murs ou à son propre corps. 
     - Le score augmente à chaque fois que le serpent mange de la nourriture.
+
+# Une Introduction à JavaScript
+
+Javascript =/  java 
+JavaScript peut s’exécuter partout temps qu'il y a un moteur Javascript
+un langage de programmation "sur" 
+javaScriipt dans le navigateur est capable de :
+Ajouter / modifier le HTML
+Interaction avec l'utilisateur 
+requêtes réseau 
+obtenir et definir des cookies
+se souvenir des données client 
+es outils de développement nous permettent de voir les erreurs, avec F12
