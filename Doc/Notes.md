@@ -18,15 +18,71 @@
     - Eviter de se heurter aux murs ou à son propre corps. 
     - Le score augmente à chaque fois que le serpent mange de la nourriture.
 
+# meeting sur Git:[staged] / [stashed] files
+
+
 # Une Introduction à JavaScript
 
-Javascript =/  java 
-JavaScript peut s’exécuter partout temps qu'il y a un moteur Javascript
-un langage de programmation "sur" 
-javaScriipt dans le navigateur est capable de :
-Ajouter / modifier le HTML
-Interaction avec l'utilisateur 
-requêtes réseau 
-obtenir et definir des cookies
-se souvenir des données client 
-es outils de développement nous permettent de voir les erreurs, avec F12
+- Javascript =/  java 
+- JavaScript peut s’exécuter partout temps qu'il y a un moteur Javascript
+- un langage de programmation "sur" 
+
+- javaScriipt dans le navigateur est capable de :
+    - Ajouter / modifier le HTML
+    - Interaction avec l'utilisateur 
+    - requêtes réseau 
+    - obtenir et definir des cookies
+    - se souvenir des données client 
+    - les outils de développement nous permettent de voir les erreurs, avec F12
+
+# Fondamentaux JavaScript 
+
+- balise "script" 
+    - 
+    la balise "script" peut etre insérés dans n'importe quelle partie d'un document HTML 
+
+- Le balisage moderne 
+    -
+    
+    - Attribut type : 
+        - 
+        Avant l'attribut type était obligatoire, maintenant il n'est plus nécessaire.
+        il peut aussi être utilisé pour les modules JavaScript.
+
+- Scripts externes 
+    - 
+    Le fichier de script est attaché à HTML avec l’attribut src :
+
+    - script src="/chemin/vers/script.js"></script
+        
+    Ici, /chemin/vers/script.js est un chemin absolu du script depuis la racine du site. On peut également fournir un chemin relatif à partir de la page en cours. Par exemple src="script.js" signifierait un fichier "script.js" dans le dossier courant.
+
+- Les Variables 
+    -
+    Pour une variable en javaScript, il faut utiliser le mot-clé "LET"
+
+    on peut aussi utiliser : var au lieu de let
+    
+    - EX :
+
+        let message;
+
+        let message; message = 'Hello';
+
+        let message; mesage = 'Hello!'; alert(message);
+
+        let user = 'John', age = 25, message = 'Hello';
+
+- Constantes 
+    - 
+    Pour declarer une constante, on peut utiliser const
+
+    - Ex :
+
+        const myBirthday = '18.04.1982';
+
+        const myBirthday = '18.04.1982'; myBirthday = '01.01.2001';
+
+lecture jusqu'a la comparaisons 
+
+semaine prochaine relire une partie et la documenter
