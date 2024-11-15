@@ -104,4 +104,8 @@ théorie sur les fichier présent dans la base de code:
 - Les différent fichiers JS qui gérent chacun une chose différente (un pour la nourriture, un pour le score, etc)
 
 - Le dossier node_modules qui contient tout ce que a besoin pour faire tourner le serveur
+
+# pour la prochaine fois
+
+afficher le score et gerer la colision entre la pomme et le serpent 
  
