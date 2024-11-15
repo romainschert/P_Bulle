@@ -27,7 +27,8 @@ function startGame() {
 }
 
 function draw() {
-  // A compléter
+  drawFood(ctx,food,box);
+  drawSnake(ctx,box,snake);
+  moveSnake(snake, direction, box)
 }
-
 startGame();
