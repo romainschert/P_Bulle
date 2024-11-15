@@ -7,8 +7,8 @@
  * @returns {Array<{x: number, y: number}>} - Un tableau contenant un objet représentant la position du premier segment du serpent.
  */
 export function initSnake() {
-  let Xposition = 1;
-  let Yposition = 1;
+  let Xposition = 0;
+  let Yposition = 0;
   let returnposition = [Xposition,Yposition]
   return returnposition;
 }
@@ -26,9 +26,9 @@ export function initSnake() {
  * @returns {{x: number, y: number}} - Un objet représentant les nouvelles coordonnées `x` et `y` de la tête du serpent après le déplacement.
  */
 export function moveSnake(snake, direction, box) {
-  if(direction == "Down")
+  if(direction == "Down") // si la direction le snake vas ver le bas
   {
-    if(snake[1]<400-box)
+    if(snake[1]<400-box) // et si 
     snake[1] += box; 
   }
   else if(direction == "RIGHT")
@@ -38,12 +38,12 @@ export function moveSnake(snake, direction, box) {
   }
   else if(direction == "Left")
   {
-    if(snake[0]>box)
+    if(snake[0]>0)
     snake[0] -= box;
   }
   else if(direction == "Up")
   {
-    if(snake[1]>box)
+    if(snake[1]>=box)
     snake[1] -= box;
   }
   }
@@ -61,6 +61,6 @@ export function moveSnake(snake, direction, box) {
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la taille de chaque segment du serpent.
  */
 export function drawSnake(ctx, box, snake) {
-  ctx.fillStyle = "green";
-  ctx.fillRect(snake[0],snake[1], box, box)
+  ctx.fillStyle = "green"; // defini la couleur du rectangle
+  ctx.fillRect(snake[0],snake[1], box, box) //defini la position x et Y et ça taille 
 }

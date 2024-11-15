@@ -10,10 +10,10 @@
  * @returns {{x: number, y: number}} - Un objet contenant les coordonnées `x` et `y` de la nourriture générée.
  */
 export function generateFood(box, canvas) {
-  let positionX = Math.floor(Math.random() * canvas.width/box)
-  let positionY = Math.floor(Math.random() * canvas.height/box)
-  let retournPosition = {x: positionX*box, y: positionY*box}
-  return retournPosition
+  let positionX = Math.floor(Math.random() * canvas.width/box) // import un nombre random pour la positionX
+  let positionY = Math.floor(Math.random() * canvas.height/box) // import un nombre random pour la positionY
+  let retournPosition = {x: positionX*box, y: positionY*box} // fait un objet avec les cordonées x et y calculer avant
+  return retournPosition // retourner l'objet avec les deux cordonnées 
 }
 
 /**
@@ -28,6 +28,6 @@ export function generateFood(box, canvas) {
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la taille de la nourriture.
  */
 export function drawFood(ctx, food, box) {
-  ctx.fillStyle = "red"
-  ctx.fillRect(food.x,food.y,box,box)
+  ctx.fillStyle = "red" // defini la couleur du rectangle
+  ctx.fillRect(food.x,food.y,box,box) //defini la position x et Y et ça taille 
 }
