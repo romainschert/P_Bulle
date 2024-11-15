@@ -86,3 +86,22 @@
 lecture jusqu'a la comparaisons 
 
 semaine prochaine relire une partie et la documenter
+
+## 15.11.2024
+ 
+théorie sur les fichier présent dans la base de code:
+
+- Un fichier de config de vite
+
+- Un fichier gitignore pour ne pas mettre /node_modules dans le repo
+
+- Un fichier package.json qui spécifie les dépendances
+
+- Un fichier package-lock.json qui spécifie les modules installés
+
+- Le html du jeu
+
+- Les différent fichiers JS qui gérent chacun une chose différente (un pour la nourriture, un pour le score, etc)
+
+- Le dossier node_modules qui contient tout ce que a besoin pour faire tourner le serveur
+ 
