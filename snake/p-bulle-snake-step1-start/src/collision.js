@@ -28,5 +28,4 @@ export function checkCollision() {
  * @returns {boolean} - Retourne `true` si la tête du serpent entre en collision avec un mur, sinon `false`.
  */
 export function checkWallCollision() {
-  // A compléter
 }

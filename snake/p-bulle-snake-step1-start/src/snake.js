@@ -28,7 +28,7 @@ export function initSnake() {
 export function moveSnake(snake, direction, box) {
   if(direction == "Down") // si la direction le snake vas ver le bas
   {
-    if(snake[1]<400-box) // et si 
+    if(snake[1]<400-box)
     snake[1] += box; 
   }
   else if(direction == "RIGHT")
@@ -63,4 +63,5 @@ export function moveSnake(snake, direction, box) {
 export function drawSnake(ctx, box, snake) {
   ctx.fillStyle = "green"; // defini la couleur du rectangle
   ctx.fillRect(snake[0],snake[1], box, box) //defini la position x et Y et ça taille 
+  ctx.strokeRect(snake[0],snake[1], box, box)
 }

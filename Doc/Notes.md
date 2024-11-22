@@ -117,3 +117,4 @@ afficher le score et gerer la colision entre la pomme et le serpent
 - Daily scrum chaqun pour soit 
 - point JSP mis en place 4 pour le projet
 - JDT fait avec git hub 
+

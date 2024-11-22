@@ -6,7 +6,6 @@ import { drawScore } from "./score.js";
 
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
-
 const box = 20;
 const gameSpeed = 200;
 let snake;
@@ -14,7 +13,6 @@ let food;
 let direction = "RIGHT";
 let score = 0;
 let gameInterval; // Variable pour stocker l'identifiant de l'intervalle
-
 document.addEventListener("keydown", (event) => {
   direction = handleDirectionChange(event, direction);
 });
@@ -27,8 +25,13 @@ function startGame() {
 }
 
 function draw() {
+  ctx.clearRect(0,0,canvas.clientWidth,canvas.clientHeight)
   drawFood(ctx,food,box);
   drawSnake(ctx,box,snake);
   moveSnake(snake, direction, box)
+  if (snake[0] == food.x && snake[1] == food.y)
+  {
+    food = generateFood(box, canvas)
+  }
 }
 startGame();
