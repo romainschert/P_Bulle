@@ -1,4 +1,4 @@
-import { initSnake, moveSnake, drawSnake } from "./snake.js";
+import { initSnake, moveSnake, drawSnake, AddSnakeBody} from "./snake.js";
 import { generateFood, drawFood } from "./food.js";
 import { handleDirectionChange } from "./controls.js";
 import { checkCollision, checkWallCollision } from "./collision.js";
@@ -25,13 +25,15 @@ function startGame() {
 }
 
 function draw() {
+
   ctx.clearRect(0,0,canvas.clientWidth,canvas.clientHeight)
   drawFood(ctx,food,box);
   drawSnake(ctx,box,snake);
   moveSnake(snake, direction, box)
-  if (snake[0] == food.x && snake[1] == food.y)
+  if (snake[0].x == food.x && snake[0].y == food.y)
   {
     food = generateFood(box, canvas)
+    AddSnakeBody(snake)
   }
 }
 startGame();
