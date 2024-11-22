@@ -117,4 +117,8 @@ afficher le score et gerer la colision entre la pomme et le serpent
 - Daily scrum chaqun pour soit 
 - point JSP mis en place 4 pour le projet
 - JDT fait avec git hub 
-
+## Fait aujourd'hui
+- un snake pas un trais qui avance 
+- colision avec la pomme
+## Pour la prochaine fois
+- score
