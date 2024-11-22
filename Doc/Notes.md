@@ -1,6 +1,6 @@
 ### Romain Schertenleib
 
-## 08.11.2024
+# 08.11.2024
 
 # Introduction du projet
 
@@ -87,7 +87,7 @@ lecture jusqu'a la comparaisons
 
 semaine prochaine relire une partie et la documenter
 
-## 15.11.2024
+# 15.11.2024
  
 théorie sur les fichier présent dans la base de code:
 
@@ -108,4 +108,12 @@ théorie sur les fichier présent dans la base de code:
 # pour la prochaine fois
 
 afficher le score et gerer la colision entre la pomme et le serpent 
- 
+
+# 22.11.2024
+## objectif du jour 
+- Faire le git agenda
+- commencer a faire les colisions
+## Discution du debut du cours 
+- Daily scrum chaqun pour soit 
+- point JSP mis en place 4 pour le projet
+- JDT fait avec git hub 
