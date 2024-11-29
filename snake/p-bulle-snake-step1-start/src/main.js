@@ -28,10 +28,12 @@ function draw() {
 
   ctx.clearRect(0,0,canvas.clientWidth,canvas.clientHeight)
   drawFood(ctx,food,box);
-  drawSnake(ctx,box,snake);
+   
+  drawScore(ctx,score);
   moveSnake(snake, direction, box)
   if (snake[0].x == food.x && snake[0].y == food.y)
   {
+    score++
     food = generateFood(box, canvas)
     AddSnakeBody(snake)
   }
