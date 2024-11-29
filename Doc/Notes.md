@@ -141,3 +141,10 @@ afficher le score et gerer la colision entre la pomme et le serpent
 - Faire le score 
 
 - changer la couleur du snake
+
+## Aujourd'hui 
+
+- le score a été fait 
+
+- le controle sur la pomme pour qu'elles ne n'apparaisent pas sous le snake
+## pour la prochaine fois
