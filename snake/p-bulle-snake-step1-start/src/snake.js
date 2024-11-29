@@ -33,7 +33,7 @@ export function moveSnake(snake, direction, box) {
   if(direction == "Down") // si la direction le snake vas ver le bas
   {
     if(snake[0].y<400-box)
-    snake[0].y += box; 
+    snake[0].y += box;
   }
   else if(direction == "RIGHT")
   {
@@ -75,12 +75,12 @@ export function drawSnake(ctx, box, snake) {
     {
       ctx.fillStyle = "#96F97B"
     }
-    ctx.fillRect(snake[i].x,snake[i].y, box, box) //defini la position x et Y et ça taille 
+    ctx.fillRect(snake[i].x,snake[i].y, box, box) //defini la position x et Y et ça taille
     ctx.strokeRect(snake[i].x,snake[i].y, box, box)
   }
-    
+
 }
-export function AddSnakeBody(snake) { 
+export function AddSnakeBody(snake) {
   const lastrectangle = snake[snake.length - 1]; // Le dernier segment du serpent
   let newrectangle = { x: lastrectangle.x, y: lastrectangle.y }; // Copie des coordonnées du dernier segment
   snake.push(newrectangle);
