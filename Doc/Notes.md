@@ -110,15 +110,34 @@ théorie sur les fichier présent dans la base de code:
 afficher le score et gerer la colision entre la pomme et le serpent 
 
 # 22.11.2024
+
 ## objectif du jour 
+
 - Faire le git agenda
+
 - commencer a faire les colisions
+
 ## Discution du debut du cours 
+
 - Daily scrum chaqun pour soit 
+
 - point JSP mis en place 4 pour le projet
+
 - JDT fait avec git hub 
+
 ## Fait aujourd'hui
+
 - un snake pas un trais qui avance 
+
 - colision avec la pomme
+
 ## Pour la prochaine fois
 - score
+
+# 29.11.2024
+
+## objectif du jour
+
+- Faire le score 
+
+- changer la couleur du snake

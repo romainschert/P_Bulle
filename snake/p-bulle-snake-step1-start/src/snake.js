@@ -73,7 +73,7 @@ export function drawSnake(ctx, box, snake) {
     }
     else
     {
-      ctx.fillStyle = "light green"
+      ctx.fillStyle = "#96F97B"
     }
     ctx.fillRect(snake[i].x,snake[i].y, box, box) //defini la position x et Y et ça taille 
     ctx.strokeRect(snake[i].x,snake[i].y, box, box)
@@ -81,9 +81,8 @@ export function drawSnake(ctx, box, snake) {
     
 }
 export function AddSnakeBody(snake) { 
-  const lastSegment = snake[snake.length - 1]; // Le dernier segment du serpent
-  let newSegment = { x: lastSegment.x, y: lastSegment.y }; // Copie des coordonnées du dernier segment
-  snake.push(newSegment);
-  console.log(snake)
+  const lastrectangle = snake[snake.length - 1]; // Le dernier segment du serpent
+  let newrectangle = { x: lastrectangle.x, y: lastrectangle.y }; // Copie des coordonnées du dernier segment
+  snake.push(newrectangle);
 }
 

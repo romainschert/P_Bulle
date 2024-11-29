@@ -20,15 +20,21 @@ document.addEventListener("keydown", (event) => {
 function startGame() {
   snake = initSnake();
   food = generateFood(box, canvas);
+  for(let i = 0; i < 2; i++)
+  {
+    AddSnakeBody(snake)
+  }
 
-  gameInterval = setInterval(draw, gameSpeed); // Stockage de l'identifiant de l'intervalle
+  gameInterval = setInterval(() => {
+    draw();
+  }
+  , gameSpeed); // Stockage de l'identifiant de l'intervalle
 }
 
 function draw() {
-
   ctx.clearRect(0,0,canvas.clientWidth,canvas.clientHeight)
   drawFood(ctx,food,box);
-   
+  drawSnake(ctx, box, snake);
   drawScore(ctx,score);
   moveSnake(snake, direction, box)
   if (snake[0].x == food.x && snake[0].y == food.y)
