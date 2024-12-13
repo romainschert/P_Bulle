@@ -10,85 +10,84 @@
 - Question à se poser pour nommer un commit : "Qu'est ce que j'ai fait pour arriver au résultat?" donc, quoi(sur quoi): qu'est ce qui est fait
 - Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 
-# Lecture du CDC 
+# Lecture du CDC
 
 - Point general:
-    - Contrôler un serpent qui se déplace sur une grille
-    - Manger de la nourriture (des pommes) pour grandir
-    - Eviter de se heurter aux murs ou à son propre corps. 
-    - Le score augmente à chaque fois que le serpent mange de la nourriture.
+  - Contrôler un serpent qui se déplace sur une grille
+  - Manger de la nourriture (des pommes) pour grandir
+  - Eviter de se heurter aux murs ou à son propre corps.
+  - Le score augmente à chaque fois que le serpent mange de la nourriture.
 
 # meeting sur Git:[staged] / [stashed] files
 
-
 # Une Introduction à JavaScript
 
-- Javascript =/  java 
+- Javascript =/ java
 - JavaScript peut s’exécuter partout temps qu'il y a un moteur Javascript
-- un langage de programmation "sur" 
+- un langage de programmation "sur"
 
 - javaScriipt dans le navigateur est capable de :
-    - Ajouter / modifier le HTML
-    - Interaction avec l'utilisateur 
-    - requêtes réseau 
-    - obtenir et definir des cookies
-    - se souvenir des données client 
-    - les outils de développement nous permettent de voir les erreurs, avec F12
+  - Ajouter / modifier le HTML
+  - Interaction avec l'utilisateur
+  - requêtes réseau
+  - obtenir et definir des cookies
+  - se souvenir des données client
+  - les outils de développement nous permettent de voir les erreurs, avec F12
 
-# Fondamentaux JavaScript 
+# Fondamentaux JavaScript
 
-- balise "script" 
-    - 
-    la balise "script" peut etre insérés dans n'importe quelle partie d'un document HTML 
+- balise "script"
 
-- Le balisage moderne 
-    -
-    
-    - Attribut type : 
-        - 
-        Avant l'attribut type était obligatoire, maintenant il n'est plus nécessaire.
-        il peut aussi être utilisé pour les modules JavaScript.
+  - la balise "script" peut etre insérés dans n'importe quelle partie d'un document HTML
 
-- Scripts externes 
-    - 
-    Le fichier de script est attaché à HTML avec l’attribut src :
+- Le balisage moderne
 
-    - script src="/chemin/vers/script.js"></script
-        
-    Ici, /chemin/vers/script.js est un chemin absolu du script depuis la racine du site. On peut également fournir un chemin relatif à partir de la page en cours. Par exemple src="script.js" signifierait un fichier "script.js" dans le dossier courant.
+  -
 
-- Les Variables 
-    -
-    Pour une variable en javaScript, il faut utiliser le mot-clé "LET"
+  - Attribut type :
+    - Avant l'attribut type était obligatoire, maintenant il n'est plus nécessaire.
+      il peut aussi être utilisé pour les modules JavaScript.
 
-    on peut aussi utiliser : var au lieu de let
-    
-    - EX :
+- Scripts externes
 
-        let message;
+  - Le fichier de script est attaché à HTML avec l’attribut src :
 
-        let message; message = 'Hello';
+  - script src="/chemin/vers/script.js"></script
 
-        let message; mesage = 'Hello!'; alert(message);
+  Ici, /chemin/vers/script.js est un chemin absolu du script depuis la racine du site. On peut également fournir un chemin relatif à partir de la page en cours. Par exemple src="script.js" signifierait un fichier "script.js" dans le dossier courant.
 
-        let user = 'John', age = 25, message = 'Hello';
+- Les Variables
 
-- Constantes 
-    - 
-    Pour declarer une constante, on peut utiliser const
+  - Pour une variable en javaScript, il faut utiliser le mot-clé "LET"
 
-    - Ex :
+  on peut aussi utiliser : var au lieu de let
 
-        const myBirthday = '18.04.1982';
+  - EX :
 
-        const myBirthday = '18.04.1982'; myBirthday = '01.01.2001';
+    let message;
 
-lecture jusqu'a la comparaisons 
+    let message; message = 'Hello';
+
+    let message; mesage = 'Hello!'; alert(message);
+
+    let user = 'John', age = 25, message = 'Hello';
+
+- Constantes
+
+  - Pour declarer une constante, on peut utiliser const
+
+  - Ex :
+
+    const myBirthday = '18.04.1982';
+
+    const myBirthday = '18.04.1982'; myBirthday = '01.01.2001';
+
+lecture jusqu'a la comparaisons
 
 semaine prochaine relire une partie et la documenter
 
 # 15.11.2024
- 
+
 théorie sur les fichier présent dans la base de code:
 
 - Un fichier de config de vite
@@ -107,44 +106,50 @@ théorie sur les fichier présent dans la base de code:
 
 # pour la prochaine fois
 
-afficher le score et gerer la colision entre la pomme et le serpent 
+afficher le score et gerer la colision entre la pomme et le serpent
 
 # 22.11.2024
 
-## objectif du jour 
+## objectif du jour
 
 - Faire le git agenda
 
 - commencer a faire les colisions
 
-## Discution du debut du cours 
+## Discution du debut du cours
 
-- Daily scrum chaqun pour soit 
+- Daily scrum chaqun pour soit
 
 - point JSP mis en place 4 pour le projet
 
-- JDT fait avec git hub 
+- JDT fait avec git hub
 
 ## Fait aujourd'hui
 
-- un snake pas un trais qui avance 
+- un snake pas un trais qui avance
 
 - colision avec la pomme
 
 ## Pour la prochaine fois
+
 - score
 
 # 29.11.2024
 
 ## objectif du jour
 
-- Faire le score 
+- Faire le score
 
 - changer la couleur du snake
 
-## Aujourd'hui 
+## Aujourd'hui
 
-- le score a été fait 
+- le score a été fait
 
 - le controle sur la pomme pour qu'elles ne n'apparaisent pas sous le snake
+
 ## pour la prochaine fois
+
+# 6.12.2024
+
+pas cours porte ouverte
