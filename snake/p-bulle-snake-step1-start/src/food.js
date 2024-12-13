@@ -10,14 +10,19 @@
  * @returns {{x: number, y: number}} - Un objet contenant les coordonnées `x` et `y` de la nourriture générée.
  */
 export function generateFood(box, canvas, snake) {
+  let foodcontrole;
+  foodcontrole = Boolean;
+  let positionX;
+  let positionY;
+  let retournPosition = { x: 0, y: 0 };
   foodcontrole = true;
   while (foodcontrole) {
     positionX = Math.floor((Math.random() * canvas.width) / box);
     positionY = Math.floor((Math.random() * canvas.height) / box);
     retournPosition = { x: positionX * box, y: positionY * box };
-    for (let i = 0; i <= snake.length; i++) {
+    for (let i = 0; i < snake.length; i++) {
       if (snake[i].x == retournPosition.x && snake[i].y == retournPosition.y) {
-        i = snake.length
+        i = snake.length;
       } else {
         foodcontrole = false;
       }
