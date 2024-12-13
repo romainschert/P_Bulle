@@ -10,8 +10,13 @@ const box = 20;
 const gameSpeed = 200;
 let snake;
 let food;
+let head;
 let direction = "RIGHT";
 let score = 0;
+let conrtolWallcolision;
+conrtolWallcolision = Boolean;
+let conrtolcolision;
+conrtolcolision = Boolean;
 let foodcontrole = true;
 foodcontrole = Boolean;
 let gameInterval; // Variable pour stocker l'identifiant de l'intervalle
@@ -21,7 +26,7 @@ document.addEventListener("keydown", (event) => {
 
 function startGame() {
   snake = initSnake();
-  food = generateFood(box, canvas);
+  food = { x: 200, y: 200 };
   for (let i = 0; i < 2; i++) {
     AddSnakeBody(snake);
   }
@@ -36,14 +41,21 @@ function draw() {
   drawFood(ctx, food, box);
   drawSnake(ctx, box, snake);
   drawScore(ctx, score);
-  moveSnake(snake, direction, box);
+  head = { x: snake[0].x, y: snake[0].y };
+  conrtolWallcolision = checkWallCollision(head, box);
+  conrtolcolision = checkCollision(head, snake);
+  if (conrtolWallcolision == true) {
+    clearInterval(gameInterval);
+  } else {
+    moveSnake(snake, direction, box);
+  }
+
   if (snake[0].x == food.x && snake[0].y == food.y) {
     // manger la pomme
     score++;
     AddSnakeBody(snake);
     // regénérer une pomme qui n'est pas sur le snake
     food = generateFood(box, canvas, snake);
-    
   }
 }
 startGame();

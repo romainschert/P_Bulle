@@ -7,8 +7,8 @@
  * @returns {Array<{x: number, y: number}>} - Un tableau contenant un objet représentant la position du premier segment du serpent.
  */
 export function initSnake() {
-  let head = {x: 0, y: 0}
-  let returnposition = [head]
+  let head = { x: 0, y: 0 };
+  let returnposition = [head];
   return returnposition;
 }
 
@@ -25,29 +25,18 @@ export function initSnake() {
  * @returns {{x: number, y: number}} - Un objet représentant les nouvelles coordonnées `x` et `y` de la tête du serpent après le déplacement.
  */
 export function moveSnake(snake, direction, box) {
-  for (let i = snake.length -1; i > 0; i--)
-    {
-      snake[i].x = snake[i - 1].x
-      snake[i].y = snake[i - 1].y
-    }
-  if(direction == "Down") // si la direction le snake vas ver le bas
-  {
-    if(snake[0].y<400-box)
+  for (let i = snake.length - 1; i > 0; i--) {
+    snake[i].x = snake[i - 1].x;
+    snake[i].y = snake[i - 1].y;
+  }
+  if (direction == "Down") {
+    // si la direction le snake vas ver le bas
     snake[0].y += box;
-  }
-  else if(direction == "RIGHT")
-  {
-    if(snake[0].x<400-box)
+  } else if (direction == "RIGHT") {
     snake[0].x += box;
-  }
-  else if(direction == "Left")
-  {
-    if(snake[0].x>0)
+  } else if (direction == "Left") {
     snake[0].x -= box;
-  }
-  else if(direction == "Up")
-  {
-    if(snake[0].y>=box)
+  } else if (direction == "Up") {
     snake[0].y -= box;
   }
 }
@@ -65,24 +54,18 @@ export function moveSnake(snake, direction, box) {
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la taille de chaque segment du serpent.
  */
 export function drawSnake(ctx, box, snake) {
-  for (let i = 0; i < snake.length; i++)
-  {
-    if(i == 0)
-    {
+  for (let i = 0; i < snake.length; i++) {
+    if (i == 0) {
       ctx.fillStyle = "green"; // defini la couleur du rectangle
+    } else {
+      ctx.fillStyle = "#96F97B";
     }
-    else
-    {
-      ctx.fillStyle = "#96F97B"
-    }
-    ctx.fillRect(snake[i].x,snake[i].y, box, box) //defini la position x et Y et ça taille
-    ctx.strokeRect(snake[i].x,snake[i].y, box, box)
+    ctx.fillRect(snake[i].x, snake[i].y, box, box); //defini la position x et Y et ça taille
+    ctx.strokeRect(snake[i].x, snake[i].y, box, box);
   }
-
 }
 export function AddSnakeBody(snake) {
   const lastrectangle = snake[snake.length - 1]; // Le dernier segment du serpent
   let newrectangle = { x: lastrectangle.x, y: lastrectangle.y }; // Copie des coordonnées du dernier segment
   snake.push(newrectangle);
 }
-
