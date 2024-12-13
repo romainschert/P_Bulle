@@ -11,6 +11,7 @@ const gameSpeed = 200;
 let snake;
 let food;
 let head;
+let i = 0;
 let direction = "RIGHT";
 let score = 0;
 let conrtolWallcolision;
@@ -41,15 +42,20 @@ function draw() {
   drawFood(ctx, food, box);
   drawSnake(ctx, box, snake);
   drawScore(ctx, score);
-  head = { x: snake[0].x, y: snake[0].y };
-  conrtolWallcolision = checkWallCollision(head, box);
-  conrtolcolision = checkCollision(head, snake);
-  if (conrtolWallcolision == true) {
-    clearInterval(gameInterval);
-  } else {
+  if (i < 1) {
     moveSnake(snake, direction, box);
+    head = { x: snake[0].x, y: snake[0].y };
+    i++;
+  } else {
+    conrtolcolision = checkCollision(head, snake);
+    conrtolWallcolision = checkWallCollision(head, box);
+    if (conrtolWallcolision == true || conrtolcolision == true) {
+      clearInterval(gameInterval);
+    } else {
+      moveSnake(snake, direction, box);
+      head = { x: snake[0].x, y: snake[0].y };
+    }
   }
-
   if (snake[0].x == food.x && snake[0].y == food.y) {
     // manger la pomme
     score++;

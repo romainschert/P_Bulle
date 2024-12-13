@@ -23,12 +23,15 @@ export function generateFood(box, canvas, snake) {
     for (let i = 0; i < snake.length; i++) {
       if (snake[i].x == retournPosition.x && snake[i].y == retournPosition.y) {
         i = snake.length;
+        foodcontrole = true;
       } else {
         foodcontrole = false;
       }
     }
+    if (foodcontrole == false) {
+      return retournPosition;
+    }
   }
-  return retournPosition;
 }
 
 /**
