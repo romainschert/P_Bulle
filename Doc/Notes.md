@@ -153,3 +153,21 @@ afficher le score et gerer la colision entre la pomme et le serpent
 # 6.12.2024
 
 pas cours porte ouverte
+
+# 13.12.2024
+
+## objectif du jour
+
+- faire les controles pour le snake
+
+## Aujourd'hui
+
+- tout les controles on été fait
+
+- plus correction du controle sur le spawn des pommes
+
+## pour la prochaine fois
+
+- faire le message game over
+
+- et l'affichage du score en grand
