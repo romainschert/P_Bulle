@@ -179,3 +179,5 @@ pas cours porte ouverte
  - refaire les texts
 ## Aujoud'hui 
 au debut on a fait les cadeaux pour le secret santa ( 20 min)
+## 
+pour les 30 dernière min faire secret santa 
