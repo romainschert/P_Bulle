@@ -171,3 +171,11 @@ pas cours porte ouverte
 - faire le message game over
 
 - et l'affichage du score en grand
+
+# 20.12.2024
+## Objectif du jour 
+ - faire le message de Game over 
+ - faire pause dans le jeux
+ - refaire les texts
+## Aujoud'hui 
+au debut on a fait les cadeaux pour le secret santa ( 20 min)
