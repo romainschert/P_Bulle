@@ -62,11 +62,12 @@ function draw() {
       conrtolcolision = checkCollision(head, snake);
       conrtolWallcolision = checkWallCollision(head, box);
       if (conrtolWallcolision == true || conrtolcolision == true) {
-        
-        clearInterval(gameInterval);
         ctx.clearRect(0,0,canvas.width, canvas.height)
         drawGameover(ctx,score)
         drawScorePause(ctx,score)
+        let button = document.getElementById("replay");
+        button.addEventListener("click", startGame)
+        clearInterval(gameInterval);
       } else {
         moveSnake(snake, direction, box, gamestop);
         head = { x: snake[0].x, y: snake[0].y };

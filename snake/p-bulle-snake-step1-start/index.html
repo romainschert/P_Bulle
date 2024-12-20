@@ -7,6 +7,7 @@
     <style>
       body {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100vh;
@@ -17,11 +18,16 @@
         border: 2px solid #000;
         background-color: #fff;
       }
+      #gameOver {
+        position: absolute;
+        
+      }
     </style>
   </head>
   <body>
     <div></div>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id = "gameOver"></div>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
