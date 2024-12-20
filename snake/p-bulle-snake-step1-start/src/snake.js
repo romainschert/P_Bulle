@@ -24,7 +24,8 @@ export function initSnake() {
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la distance de déplacement du serpent.
  * @returns {{x: number, y: number}} - Un objet représentant les nouvelles coordonnées `x` et `y` de la tête du serpent après le déplacement.
  */
-export function moveSnake(snake, direction, box) {
+export function moveSnake(snake, direction, box, gamestop) {
+  
   for (let i = snake.length - 1; i > 0; i--) {
     snake[i].x = snake[i - 1].x;
     snake[i].y = snake[i - 1].y;
@@ -39,8 +40,8 @@ export function moveSnake(snake, direction, box) {
   } else if (direction == "Up") {
     snake[0].y -= box;
   }
+  
 }
-
 /**
  * Dessine le serpent sur le canvas.
  *
