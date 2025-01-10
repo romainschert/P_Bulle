@@ -25,10 +25,12 @@ export function initSnake() {
  * @returns {{x: number, y: number}} - Un objet représentant les nouvelles coordonnées `x` et `y` de la tête du serpent après le déplacement.
  */
 export function moveSnake(snake, direction, box, gamestop) {
-  
-  for (let i = snake.length - 1; i > 0; i--) {
-    snake[i].x = snake[i - 1].x;
-    snake[i].y = snake[i - 1].y;
+  if (gamestop != true)
+  {
+    for (let i = snake.length - 1; i > 0; i--) {
+      snake[i].x = snake[i - 1].x;
+      snake[i].y = snake[i - 1].y;
+    }
   }
   if (direction == "Down") {
     // si la direction le snake vas ver le bas

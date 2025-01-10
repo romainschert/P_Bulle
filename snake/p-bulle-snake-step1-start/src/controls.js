@@ -10,7 +10,7 @@
  * @param {string} currentDirection - La direction actuelle du serpent (peut être "UP", "DOWN", "LEFT", ou "RIGHT").
  * @returns {string} - La nouvelle direction du serpent après traitement, ou la direction actuelle si le changement n'est pas valide.
  */
-export function handleDirectionChange(event, currentDirection, gamestop) {
+export function handleDirectionChange(event, currentDirection) {
   let direction;
   if (event.code == "ArrowRight" && currentDirection !== "Left") {
     direction = "RIGHT";
@@ -39,8 +39,9 @@ export function gamepause(gamestop, event)
     if (gamestop == true){
       gamestop = false
     }
-    gamestop = true
-
+    else{
+      gamestop = true
+    }
     return gamestop;
   }
 }
