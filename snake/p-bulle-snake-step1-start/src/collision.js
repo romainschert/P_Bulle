@@ -11,17 +11,10 @@
  * @returns {boolean} - Retourne `true` si la tête du serpent entre en collision avec un segment de son corps, sinon `false`.
  */
 export function checkCollision(head, snake) {
-  let CheckCollision;
-  CheckCollision = Boolean;
   for (let i = 1; i < snake.length; i++) {
-    if (snake[i].x == head.x && snake[i].y == head.y) {// si ta tête a la même position qu'une partie du corp
-      CheckCollision = true;
-      return (CheckCollision = true);
-    } else {
-      CheckCollision = false;
-    }
+    if (snake[i].x == head.x && snake[i].y == head.y) return true;
   }
-  return CheckCollision;
+  return false;
 }
 /**
  * Vérifie si la tête du serpent entre en collision avec les murs du canvas.

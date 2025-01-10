@@ -8,9 +8,7 @@ const ctx = canvas.getContext("2d");
 const box = 20;
 const gameSpeed = 200;
 let snake;
-let gamestop;
-gamestop = Boolean;
-gamestop = false;
+let gamestop = false;
 let Timer = 0;
 let food;
 let head;   
@@ -38,6 +36,7 @@ function startGame() {
   direction = "RIGHT";
   i = 0;
   Timer = 0;
+  score = 0;
   snake = initSnake();
   food = { x: 200, y: 200 };
   for (let j = 0; j < 2; j++) {

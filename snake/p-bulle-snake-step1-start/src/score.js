@@ -10,7 +10,7 @@
 export function drawScore(ctx, score) {
   ctx.font = "20px Arial"
   ctx.fillStyle = "black"
-  ctx.fillText(score + "p", 10, 20)
+  ctx.fillText("Score: " + score + "p", 10, 20)
 }
 
 export function drawPause(ctx) {
