@@ -35,14 +35,7 @@ export function drawScorePause(ctx, score) {
 }
 
 export function drawGameover(ctx){
-  let position = document.getElementById("gameOver");
-  position.innerHTML = deathScreen();
-
   ctx.font = "52px Arial"
   ctx.fillStyle = "black"
   ctx.fillText("game over",80, 130)
-}
-function deathScreen(){
-  let gameOver = ["<button id = 'replay'>play again</button>"]
-  return gameOver
 }

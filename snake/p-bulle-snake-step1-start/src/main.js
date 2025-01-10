@@ -31,16 +31,19 @@ document.addEventListener("keydown", (event) => {
   button.addEventListener("click", startGame)
 });
 
-
+replay.addEventListener("click", startGame)
 
   
 function startGame() {
+  replay.classList.add("d-none")
+  direction = "RIGHT";
+  i = 0;
   snake = initSnake();
   food = { x: 200, y: 200 };
-  for (let i = 0; i < 2; i++) {
+  for (let j = 0; j < 2; j++) {
     AddSnakeBody(snake);    
   }
-
+  ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
   gameInterval = setInterval(() => { 
     draw();
   }, gameSpeed); // Stockage de l'identifiant de l'intervalle 
@@ -74,15 +77,16 @@ function draw() {
       if (conrtolWallcolision == true || conrtolcolision == true) {
         ctx.clearRect(0,0,canvas.width, canvas.height)
         drawGameover(ctx,score)
+        replay.classList.remove("d-none")
         drawScorePause(ctx,score)
         clearInterval(gameInterval);
-        let button = document.getElementById("replay");
-        button.addEventListener("click", startGame)
+
       } 
-      
-      moveSnake(snake, direction, box, gamestop);
+      else
+      {
+        moveSnake(snake, direction, box, gamestop);
       head = { x: snake[0].x, y: snake[0].y };
-      
+      }
     }
     if (snake[0].x == food.x && snake[0].y == food.y) {
       // manger la pomme
