@@ -17,6 +17,7 @@ export function generateFood(box, canvas, snake) {
   let retournPosition = { x: 0, y: 0 };
   foodcontrole = true;
   while (foodcontrole) {
+    debugger
     positionX = Math.floor((Math.random() * canvas.width) / box);
     positionY = Math.floor((Math.random() * canvas.height) / box);
     retournPosition = { x: positionX * box, y: positionY * box };

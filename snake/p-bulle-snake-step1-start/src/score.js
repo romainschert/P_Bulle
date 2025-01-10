@@ -10,7 +10,7 @@
 export function drawScore(ctx, score) {
   ctx.font = "20px Arial"
   ctx.fillStyle = "black"
-  ctx.fillText(score, 10, 20)
+  ctx.fillText(score + "p", 10, 20)
 }
 
 export function drawPause(ctx) {
@@ -24,7 +24,7 @@ export function drawTimer(ctx,Timer)
 {
   ctx.font = "20px Arial"
   ctx.fillStyle = "black"
-  ctx.fillText(Math.round(Timer/1000), 10, 60)
+  ctx.fillText(Math.round(Timer/1000) + "s", 350, 20)
 }
 
 

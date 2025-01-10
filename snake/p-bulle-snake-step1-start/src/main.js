@@ -3,7 +3,6 @@ import { generateFood, drawFood } from "./food.js";
 import { handleDirectionChange, gamepause } from "./controls.js";
 import { checkCollision, checkWallCollision } from "./collision.js";
 import { drawScore, drawPause, drawScorePause, drawGameover, drawTimer} from "./score.js";
-
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 const box = 20;
@@ -38,6 +37,7 @@ function startGame() {
   replay.classList.add("d-none")
   direction = "RIGHT";
   i = 0;
+  Timer = 0;
   snake = initSnake();
   food = { x: 200, y: 200 };
   for (let j = 0; j < 2; j++) {

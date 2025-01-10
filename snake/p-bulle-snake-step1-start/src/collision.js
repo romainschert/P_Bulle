@@ -14,7 +14,7 @@ export function checkCollision(head, snake) {
   let CheckCollision;
   CheckCollision = Boolean;
   for (let i = 1; i < snake.length; i++) {
-    if (snake[i].x == head.x && snake[i].y == head.y) {
+    if (snake[i].x == head.x && snake[i].y == head.y) {// si ta tête a la même position qu'une partie du corp
       CheckCollision = true;
       return (CheckCollision = true);
     } else {
@@ -39,9 +39,9 @@ export function checkCollision(head, snake) {
 export function checkWallCollision(head, box) {
   let checkWallCollision;
   checkWallCollision = Boolean;
-  if (head.y > 400 - box) {
+  if (head.y > 380) {
     checkWallCollision = true;
-  } else if (head.x > 400 - box) {
+  } else if (head.x > 380) {
     checkWallCollision = true;
   } else if (head.x < 0) {
     checkWallCollision = true;
